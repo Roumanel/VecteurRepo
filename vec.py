@@ -27,4 +27,23 @@ def inversElem(Liste):#inverser les elements du vacteur
 	for i in range(n):
 		list1.append(Liste[n-i-1])
 	return list1
+
+
+def maxElem(Liste):#retouner le max d'un vecteur
+	n=len(Liste)
+	max=0
+	for i in range(n):
+		if Liste[i]>max:
+			max=Liste[i]
+	return max
+
+
+
+def minElem(Liste):#retouner le min d'un vecteur
+	n=len(Liste)
+	min=Liste[0]
+	for i in range(n):
+		if Liste[i]<min:
+			min=Liste[i]
+	return min
 	
