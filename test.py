@@ -25,6 +25,24 @@ class vecTest(unittest.TestCase):
 		list2=[3,7,2]
 		list=vec.inversElem(list1)
 		self.assertEqual(list,list2)
+
+	def test_max(self):
+		list1=[2,3,7]
+		max=vec.maxElem(list1)
+		maxtest=7
+		self.assertEqual(max,maxtest)
+
+	def test_min(self):
+		list1=[2,3,7]
+		mintest=2
+		min=vec.minElem(list1)
+		self.assertEqual(min,mintest)
+
+	def test_formule(self):
+		list1=[2,3,7]
+		Listtest=[4,6,14]
+		list=vec.formule(list1)
+		self.assertEqual(list,Listtest)		
 		
 		
 		
